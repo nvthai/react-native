@@ -17,6 +17,8 @@ const NativeMethodsMixin = require('NativeMethodsMixin');
 const React = require('React');
 const StyleSheet = require('StyleSheet');
 const View = require('View');
+const Dimensions = require('Dimensions');
+const {width, height} = Dimensions.get('window')
 
 const requireNativeComponent = require('requireNativeComponent');
 
@@ -145,6 +147,7 @@ const DatePickerIOS = React.createClass({
 const styles = StyleSheet.create({
   datePickerIOS: {
     height: 216,
+    width: width
   },
 });
 
